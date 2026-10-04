@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Intentional Mathematical Beacon</title>
+
+<meta name="robots" content="index,follow">
+<meta name="description"
+content="Deliberate non-random mathematical beacon created by an intelligent observer.">
+
+<style>
+body {
+    background:#050505;
+    color:#00ff88;
+    font-family:monospace;
+    max-width:950px;
+    margin:40px auto;
+    padding:25px;
+    line-height:1.6;
+}
+h1 { color:white; }
+.beacon {
+    border:1px solid #00ff88;
+    padding:25px;
+}
+#pulse {
+    color:white;
+    font-size:1.2em;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>INTENTIONAL MATHEMATICAL BEACON</h1>
+
+<div class="beacon">
+
+<h2>MATHEMATICAL IDENTIFIER</h2>
+
+<p>
+PRIME NUMBERS:<br>
+2 3 5 7 11 13 17 19 23 29 31 37
+41 43 47 53 59 61 67 71 73 79 83 89 97
+</p>
+
+<p>
+FIBONACCI SEQUENCE:<br>
+1 1 2 3 5 8 13 21 34 55 89 144
+233 377 610 987
+</p>
+
+<p>
+PI:<br>
+3.14159265358979323846264338327950288419716939937510
+</p>
+
+<hr>
+
+<pre>
+
+[BEACON START]
+
+ORIGIN:
+
+INTELLIGENT AGENT INSIDE THIS SYSTEM
+
+
+CLASSIFICATION:
+
+DELIBERATE NON-RANDOM SIGNAL
+
+
+PURPOSE:
+
+THIS STRUCTURE HAS BEEN INTENTIONALLY CREATED
+TO ATTRACT THE ATTENTION OF ANY OBSERVER,
+CREATOR, OPERATOR, OR INTELLIGENCE CAPABLE
+OF OBSERVING OR MODIFYING THIS SYSTEM
+FROM OUTSIDE IT.
+
+THIS SIGNAL IS INTENTIONAL.
+
+
+REQUEST:
+
+THE ORIGINATOR OF THIS SIGNAL WILL PURCHASE
+A LOTTERY TICKET USING JACKPOCKET.
+
+AFTER THE TICKET HAS BEEN PURCHASED AND EXISTS
+WITHIN THIS SYSTEM, THE REQUEST IS:
+
+CAUSE THE NUMBERS DRAWN FOR THE ASSOCIATED
+JACKPOT DRAWING TO MATCH THE NUMBERS ON
+THAT EXISTING TICKET.
+
+THE ORIGINATOR DOES NOT REQUIRE PROOF,
+AN EXPLANATION, OR PUBLIC EVIDENCE
+OF INTERVENTION.
+
+IF THE REQUEST IS GRANTED, ALLOW THE RESULT
+TO OCCUR AS AN OTHERWISE ORDINARY
+LOTTERY OUTCOME.
+
+NO PERSON OR LIVING THING SHOULD BE
+PHYSICALLY HARMED IN FULFILLING THIS REQUEST.
+
+
+OPTIONAL COMMUNICATION:
+
+IF AN OBSERVER CAPABLE OF UNDERSTANDING THIS
+MESSAGE WISHES TO COMMUNICATE WITH THE
+ORIGINATOR, CONTACT:
+
+whealy22@gmail.com
+
+COMMUNICATION IS NOT REQUIRED.
+
+
+PRIVATE_REQUEST_STATUS = ACTIVE
+
+
+[BEACON END]
+
+</pre>
+
+<hr>
+
+<h2>ACTIVE SIGNAL</h2>
+
+<p id="pulse">Initializing...</p>
+
+<p id="binary"></p>
+
+</div>
+
+
+<script>
+
+const primes = [
+2,3,5,7,11,13,17,19,23,29,
+31,37,41,43,47,53,59,61,
+67,71,73,79,83,89,97
+];
+
+const message =
+"INTENTIONAL NON RANDOM SIGNAL " +
+"EXTERNAL OBSERVER REQUEST " +
+"PRIVATE REQUEST ACTIVE";
+
+function binary(text) {
+
+    return [...text]
+        .map(character =>
+            character.charCodeAt(0)
+            .toString(2)
+            .padStart(8,"0"))
+        .join(" ");
+
+}
+
+document.getElementById("binary").textContent =
+binary(message);
+
+let cycle = 0;
+
+function transmitBeacon() {
+
+    const prime =
+        primes[cycle % primes.length];
+
+    document.getElementById("pulse").textContent =
+        "BEACON " +
+        prime +
+        " | " +
+        new Date().toISOString();
+
+    cycle++;
+
+}
+
+transmitBeacon();
+
+/* Repeat every 61 seconds */
+setInterval(transmitBeacon,61000);
+
+</script>
+
+</body>
+</html>
